@@ -1,7 +1,7 @@
 provider "nutanix" {}
 
 resource "nutanix_virtual_machine" "vm1" {
-  count = 3
+  count = ${var.num}
   name        = "roger-test-.${count.index}"
 
   num_vcpus_per_socket = 1
