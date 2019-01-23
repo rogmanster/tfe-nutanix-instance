@@ -1,1 +1,1 @@
-variable "num" { default = 3 }
+variable "num_of_vms" { default = 3 }
