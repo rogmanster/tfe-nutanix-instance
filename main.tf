@@ -1,6 +1,7 @@
 provider "nutanix" {}
 
 resource "nutanix_virtual_machine" "vm1" {
+  description = "dev-machines"
   count       = "${var.num_of_vms}"
   name        = "roger-test-${count.index}"
 
